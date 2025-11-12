@@ -33,7 +33,7 @@ export default function WhyUsSection() {
   ];
 
   return (
-    <section id="about" className="py-20 px-4 sm:px-6 lg:px-8 bg-linear-to-br from-emerald-500 to-emerald-600">
+    <section id="about" className="py-6 px-4 sm:px-6 lg:px-8 bg-linear-to-br from-emerald-500 to-emerald-600">
       <div className="max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Side - Content */}
@@ -117,7 +117,7 @@ export default function WhyUsSection() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="space-y-6"
+            className="space-y-2 sm:space-y-3"
           >
             {features.map((feature, index) => (
               <motion.div

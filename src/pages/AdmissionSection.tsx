@@ -124,7 +124,8 @@ export default function AdmissionSection() {
               <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-[#00502c] leading-tight mb-4 lg:mb-6">
                 Kelajak poydevorini birga yarating!
               </h2>
-              <p className="text-base sm:text-lg lg:text-xl text-white leading-relaxed">
+              <p className="text-lg sm:text-lg lg:text-xl font-sans
+               text-white leading-relaxed">
                 Biz farzandingizga sifatli ta'lim va keng imkoniyatlar dunyosini taqdim etamiz, chunki bugungi ta'lim – ertangi muvaffaqiyatning garovi.
               </p>
             </motion.div>

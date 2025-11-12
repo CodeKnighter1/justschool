@@ -15,7 +15,7 @@ export default function AboutSubjectsSection() {
   ];
 
   return (
-    <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
+    <section className="py-6 px-4 sm:px-6 lg:px-8 bg-gray-50">
       <div className="max-w-7xl mx-auto space-y-12">
         
         {/* About Section */}
@@ -28,7 +28,7 @@ export default function AboutSubjectsSection() {
             transition={{ duration: 0.8 }}
             className="bg-white rounded-3xl p-2 lg:p-5 md:w-[800px] border-4 border-gray-800 shadow-lg order-2 lg:order-1"
           >
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-800 mb-6">
+            <h2 className="text-2xl lg:text-4xl font-bold text-gray-800 mb-6">
               Novda School haqida
             </h2>
             <p className="text-gray-700 leading-relaxed text-base lg:text-lg">
@@ -42,7 +42,7 @@ export default function AboutSubjectsSection() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="grid grid-cols-2 gap-4 order-1 lg:order-2"
+            className="grid grid-cols-2 gap-2 sm:gap-4 order-1 lg:order-2"
           >
             {galleryImages.map((img, index) => (
               <motion.div
@@ -110,19 +110,19 @@ export default function AboutSubjectsSection() {
           >
             {/* Header with Arrow */}
             <div className="flex items-start justify-between">
-              <h2 className="text-3xl lg:text-4xl font-bold text-[#00502c]">
+              <h2 className="text-2xl lg:text-4xl font-bold text-[#00502c]">
                 Chuqurlashtirilgan fanlar
               </h2>
               <motion.div
                 whileHover={{ scale: 1.2, x: 5 }}
-                className="w-12 h-12 bg-[#00502c] rounded-2xl flex items-center justify-center cursor-pointer"
+                className="w-14 h-10 bg-[#00502c] rounded-2xl flex items-center justify-center cursor-pointer"
               >
                 <ChevronRightIcon className="w-6 h-6 text-white" />
               </motion.div>
             </div>
 
             {/* Language Tags */}
-            <div className="flex flex-wrap gap-3">
+            <div className="flex flex-col gap-3">
               {languages.map((lang, index) => (
                 <motion.span
                   key={index}
@@ -131,7 +131,7 @@ export default function AboutSubjectsSection() {
                   viewport={{ once: true }}
                   transition={{ duration: 0.4, delay: 0.2 + index * 0.1 }}
                   whileHover={{ scale: 1.1 }}
-                  className={`${lang.color} px-5 py-2 rounded-full font-semibold text-gray-800 text-sm shadow-md`}
+                  className={`${lang.color} px-5 py-2 rounded-t-2xl rounded-bl-2xl font-semibold text-gray-800 text-sm shadow-md`}
                 >
                   {lang.name}
                 </motion.span>
@@ -140,8 +140,8 @@ export default function AboutSubjectsSection() {
 
             {/* Ta'lim tili */}
             <div className="space-y-3">
-              <h3 className="text-xl font-bold text-gray-800">Ta'lim tili</h3>
-              <p className="text-gray-700 leading-relaxed">
+              <h3 className="text-2xl font-bold text-[#00502c]">Ta'lim tili</h3>
+              <p className="text-gray-900 font-medium leading-relaxed">
                 Maktabimizda asosiy ta'lim tili – <span className="font-semibold text-emerald-600">O'zbek tili</span>. 
                 Qo'shimcha ravishda <span className="font-semibold">Ingliz</span> va <span className="font-semibold">Rus tillari</span> chuqur o'rganiladi. Bu farzandingizning xalqaro miqyosda raqobatbardosh bo'lishiga ko'mak beradi.
               </p>
@@ -149,14 +149,14 @@ export default function AboutSubjectsSection() {
 
             {/* Yosh guruhlari */}
             <div className="space-y-3">
-              <h3 className="text-xl font-bold text-gray-800">Yosh guruhlari</h3>
+              <h3 className="text-2xl font-bold text-[#00502c]">Yosh guruhlari</h3>
               <motion.div
                 whileHover={{ scale: 1.05 }}
-                className="inline-block bg-orange-400 px-5 py-2 rounded-full font-semibold text-white text-sm shadow-md"
+                className="inline-block bg-orange-400 px-5 py-2 rounded-full font-semibold text-white text-base shadow-md"
               >
                 1-11 sinf
               </motion.div>
-              <p className="text-gray-700 leading-relaxed mt-2">
+              <p className="text-gray-900 font-medium leading-relaxed mt-2">
                 Har bir sinfda o'quvchilarning yoshiga va bilim darajasiga mos dasturlar ishlab chiqilgan.
               </p>
             </div>

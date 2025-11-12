@@ -57,10 +57,10 @@ export default function Footer() {
           {/* Left Column - Contact Form */}
           <motion.div variants={footerVariants} className="space-y-6">
             <div className="space-y-3">
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#00502c]">
+              <h2 className="text-2xl sm:text-4xl lg:text-5xl font-bold text-[#045832]">
                 Biz bilan bog'laning
               </h2>
-              <p className="text-sm sm:text-base text-white/90 leading-relaxed">
+              <p className="text-base sm:text-lg text-white/90 leading-relaxed">
                 Biz siz bilan imkon qadar tezda bog'lanamiz va maktabimiz haqida yanada batafsil ma'lumot beramiz.
               </p>
             </div>

@@ -25,11 +25,11 @@ export default function FAQContactSection() {
     }
   ];
 
-  const toggleAccordion = (index) => {
+  const toggleAccordion = (index: string | any) => {
     setOpenIndex(openIndex === index ? null : index);
   };
 
-  const handleInputChange = (e) => {
+  const handleInputChange = (e: string | any) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value

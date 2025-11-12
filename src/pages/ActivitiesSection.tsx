@@ -53,7 +53,7 @@ export default function ActivitiesSection() {
     ];
 
     return (
-        <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 bg-white">
+        <section className="py-6 sm:py-8 lg:py-12 px-4 sm:px-6 lg:px-8 bg-white">
             <div className="max-w-7xl mx-auto">
                 {/* Header */}
                 <motion.div
@@ -63,10 +63,10 @@ export default function ActivitiesSection() {
                     transition={{ duration: 0.8 }}
                     className="mb-10 sm:mb-12 lg:mb-16"
                 >
-                    <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#2f584e] mb-4 sm:mb-6">
+                    <h2 className="text-2xl sm:text-4xl lg:text-5xl font-bold text-[#2f584e] mb-4 sm:mb-6">
                         Darsdan tashqari mashg'ulotlar
                     </h2>
-                    <p className="text-base sm:text-lg lg:text-xl text-[#007d5e] leading">
+                    <p className="text-base sm:text-lg lg:text-xl font-medium text-[#007d5e] leading">
                         Novda School faqatgina akademik bilimlar bilan cheklanib qolmay, o'quvchilarimizning har tomonlama rivojlanishiga yordam beruvchi ko'plab darsdan tashqari mashg'ulotlarni o'tkazamiz. Biz o'quvchilarning qiziqish va qobiliyatlarini rivojlantirishga ko'maklashuvchi turli yo'nalishdagi tadbirlar va mashg'ulotlar tashkillashtiramiz.
                     </p>
                 </motion.div>
@@ -81,7 +81,7 @@ export default function ActivitiesSection() {
                             viewport={{ once: true }}
                             transition={{ duration: 0.6, delay: index * 0.12 }}
                             whileHover={{ y: -8, transition: { duration: 0.3 } }}
-                            className={`${activity.color} rounded-4xl p-4 sm:p-5 lg:p-6 shadow-lg hover:shadow-2xl transition-shadow duration-300 relative overflow-hidden min-h-80 sm:min-h-[340px] lg:min-h-[360px] flex flex-col`}
+                            className={`${activity.color} rounded-4xl p-4 sm:p-5 lg:p-6 shadow-lg hover:shadow-2xl transition-shadow duration-300 relative overflow-hidden sm:min-h-[340px] lg:min-h-[360px] flex flex-col`}
                         >
                             {/* Background Image for third card */}
                             {activity.image && (

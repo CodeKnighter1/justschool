@@ -11,7 +11,7 @@ import WhyUsSection from './WhyUsSection'
 
 function Home() {
   return (
-    <div>
+    <div className='overflow-hidden'>
         <HeroSection />
         <WhyUsSection />
         <AboutSubjectsSection />

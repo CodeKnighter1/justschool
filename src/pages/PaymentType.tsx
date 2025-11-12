@@ -73,14 +73,14 @@ export default function PaymentType() {
           transition={{ duration: 0.7, ease: 'easeOut' }}
           className="text-left mb-10 sm:mb-12 lg:mb-16"
         >
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#00502c] mb-3 sm:mb-4">
+          <h2 className="text-2xl sm:text-4xl lg:text-5xl font-bold text-[#00502c] mb-3 sm:mb-4">
             Ta'lim narxlarimiz
           </h2>
-          <p className="text-sm sm:text-base lg:text-lg text-[#2f584e] max-w-4xl leading-relaxed">
+          <p className="text-base sm:text-lg lg:text-xl text-[#2f584e] max-w-4xl leading-relaxed">
             Ushbu narxlar sifatli ta'lim, zamonaviy resurslar, keng qo'llab-quvvatlovchi o'qituvchilar
             jamoasi va sog'lom ovqatlanish dasturini o'z ichiga oladi.
           </p>
-          <p className="text-sm sm:text-base lg:text-lg text-[#2f584e] max-w-4xl leading-relaxed mt-1">
+          <p className="text-base sm:text-lg lg:text-xl text-[#2f584e] max-w-4xl leading-relaxed mt-1">
             Novda School'da o'qish — farzandingiz uchun yorqin kelajak sari eng yaxshi investitsiyadir!
           </p>
         </motion.div>
@@ -106,23 +106,23 @@ export default function PaymentType() {
                   damping: 20,
                 },
               }}
-              className={`${card.bgColor} rounded-3xl p-6 sm:p-8 shadow-lg hover:shadow-2xl transition-shadow duration-300 cursor-pointer relative overflow-hidden`}
+              className={`${card.bgColor} rounded-3xl p-4 sm:p-8 shadow-lg hover:shadow-2xl transition-shadow duration-300 cursor-pointer relative overflow-hidden`}
             >
               {/* Subtle gradient overlay for middle card */}
               {card.grade === '5-8 sinf' && (
                 <div className="absolute inset-0 bg-linear-to-b from-emerald-400/10 to-transparent pointer-events-none" />
               )}
 
-              <div className="relative z-10 space-y-4 sm:space-y-5">
+              <div className="relative z-10 space-y-3 sm:space-y-5">
                 {/* Badge Section */}
                 <div className="flex flex-col items-center space-y-2">
-                  <span className={`text-xs font-medium ${card.textColor === 'text-white' ? 'text-emerald-100' : 'text-gray-500'}`}>
+                  <span className={`text-lg font-medium ${card.textColor === 'text-white' ? 'text-emerald-100' : 'text-gray-500'}`}>
                     Oylik
                   </span>
                   <motion.span
                     whileHover={{ scale: 1.05 }}
                     transition={{ type: 'spring', stiffness: 400 }}
-                    className={`px-5 py-2 rounded-full text-sm font-semibold ${card.badgeBg} ${card.badgeText}`}
+                    className={`px-5 py-2 rounded-full text-base font-semibold ${card.badgeBg} ${card.badgeText}`}
                   >
                     {card.grade}
                   </motion.span>
@@ -138,12 +138,9 @@ export default function PaymentType() {
                     className="flex items-baseline justify-center gap-1"
                   >
                     <span className={`text-4xl sm:text-5xl lg:text-5xl font-bold ${card.priceColor}`}>
-                      {card.price}
+                      {card.price} so'm
                     </span>
                   </motion.div>
-                  <span className={`text-base sm:text-lg font-medium ${card.priceColor} block`}>
-                    so'm
-                  </span>
                 </div>
 
                 {/* Description */}
@@ -152,7 +149,7 @@ export default function PaymentType() {
                   whileInView={{ opacity: 1 }}
                   viewport={{ once: true }}
                   transition={{ delay: card.delay + 0.3, duration: 0.5 }}
-                  className={`text-xs sm:text-sm ${card.textColor} leading-relaxed text-center pt-2`}
+                  className={`text-base sm:text-sm ${card.textColor} leading-relaxed text-center pt-2`}
                 >
                   Narxlar o'quvchilarning ehtiyojlarini hisobga olgan holda belgilangan
                 </motion.p>

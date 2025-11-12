@@ -6,7 +6,7 @@ export default function OurKitchen() {
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
         {/* Left Column - Text */}
         <div className="space-y-2 sm:space-y-4 text-white order-2 lg:order-1">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight text-[#00502c]">
+          <h2 className="text-2xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight text-[#00502c]">
             Bizning Oshxona
           </h2>
           <p className="text-sm sm:text-base lg:text-lg font-medium leading-relaxed text-white">
@@ -22,7 +22,7 @@ export default function OurKitchen() {
               <img
                 src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=600&h=800&fit=crop"
                 alt="School cafeteria with fresh meals"
-                className="w-full h-[500px] object-cover"
+                className="w-full h-[300px] lg:h-[500px] object-cover"
               />
             </div>
             

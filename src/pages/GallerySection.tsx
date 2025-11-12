@@ -190,7 +190,7 @@ export default function GallerySection() {
   };
 
   return (
-    <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white overflow-hidden">
+    <section className="py-6 px-4 sm:px-6 lg:px-8 bg-white overflow-y-hidden overflow-hidden">
       <div className="max-w-[1600px] mx-auto">
         {/* Gallery Container */}
         <div className="relative">
@@ -212,7 +212,7 @@ export default function GallerySection() {
           {/* Scrollable Gallery */}
           <div
             ref={scrollContainerRef}
-            className="flex gap-4 overflow-x-auto scrollbar-hide cursor-grab select-none pb-4 px-2 scroll-smooth"
+            className="flex gap-4 overflow-x-auto overflow-y-hidden scrollbar-hide cursor-grab select-none pb-4 px-2 scroll-smooth"
             onMouseDown={handleMouseDown}
             onMouseUp={handleMouseUp}
             onMouseMove={handleMouseMove}
